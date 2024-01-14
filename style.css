@@ -1,0 +1,8 @@
+.icon-color{
+    color: #ffff !important;
+    border-radius: 50%;
+}
+.bullets{
+    list-style: none;
+    padding: 5px;
+}
