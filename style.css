@@ -6,3 +6,37 @@
     list-style: none;
     padding: 5px;
 }
+.myColor{
+    background-color: #20aef0;
+    color: #ffff
+}
+.hover:hover{
+    color: #20aef0;
+ }
+ .blend {
+     background-image: url("images/1705231957939.gif");
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn;
+    width: 280px;
+    height: 350px;
+    background-color: #c0bbbb; 
+    background-position: 100%;
+    background-size: cover; 
+  }
+  #Login{
+    margin:  %, 0%, 8%, 8%;
+}
+  #SignIn{
+    color: rgb(235, 243, 17) !important;
+    text-decoration: none;
+  }
+  #SignIn:hover{
+    color: rgb(232, 110, 243) !important;
+  }
+  #auth{
+    color: rgb(235, 243, 17) !important;
+    text-decoration: none;
+  }
+    #auth:hover{
+    color: rgb(232, 110, 243) !important;
+}
