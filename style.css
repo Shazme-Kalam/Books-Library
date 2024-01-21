@@ -6,12 +6,15 @@
     list-style: none;
     padding: 5px;
 }
+.color{
+  color: #15aef5 !important;
+}
 .myColor{
     background-color: #20aef0;
     color: #ffff
 }
 .hover:hover{
-    color: #20aef0;
+    color: #20aef0 !important;
  }
  .blend {
      background-image: url("images/1705231957939.gif");
@@ -24,7 +27,7 @@
     background-size: cover; 
   }
   #Login{
-    margin:  %, 0%, 8%, 8%;
+    margin:  0%, 0%, 8%, 8%;
 }
   #SignIn{
     color: rgb(235, 243, 17) !important;

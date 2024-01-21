@@ -14,7 +14,7 @@
     <!-- fixed Navbar -->
     <div class="container-fluid nav justify-content-center myColor">
         <div class="d-flex p-2">
-            <h5 class="p-1 color">FREE SHIPPING on all orders of </h5>
+            <h5 class="p-1">FREE SHIPPING on all orders of </h5>
             <h4><strong class="d-flex text-warning"> PKR 5000 and above</strong></h4>
             <a class="nav-link active p-2" href="#">
                 <strong class="bg-warning text-success p-2 rounded-3 ">Use Promo Code: SMIT</strong>
@@ -73,10 +73,10 @@
                     </li>
                 </ul>
                 <a href="./signUp.html">
-                    <button class="myColor mx-2 p-2 fw-bold border-white rounded-3" type="submit">REGISTER</button>
+                    <button class="myColor mx-2 p-2 fw-bold border-warning rounded-3" type="submit">REGISTER</button>
                 </a>
-                <a href="./signUp.html">
-                    <button class="myColor p-2 fw-bold border-white rounded-3" type="submit">LOGOUT</button>
+                <a href="./index.html">
+                    <button class="myColor p-2 fw-bold border-warning rounded-3" type="submit">LOGOUT</button>
                 </a>
             </div>
         </div>
@@ -85,7 +85,7 @@
     <div>
         <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card border-0">
+                <div class="card border-5 m-5 border-warning">
                     <div class="card-body">
                         <h2 class="m-5 myColor p-3 rounded-3">LOG IN</h2>
                         <br />
@@ -103,7 +103,7 @@
                                         placeholder="use correct password">
                                 </div>
                             </div>
-                            <button id="Login" class="myColor border-white rounded-3 fw-bold p-2 mx-5" type="submit"
+                            <button id="Login" class="myColor border-warning rounded-3 fw-bold p-2 mx-5" type="submit"
                                 onsubmit="login(event)"> SIGN IN
                             </button>
                         </form>
@@ -113,7 +113,7 @@
             <div class="col-sm-6">
                 <div class="card border-0">
                     <div class="card-body">
-                        <img src="images/manybooks.jpg" alt="" width="800px">
+                        <img src="images/manybooks.jpg" alt="" width="800px" height="600px">
                     </div>
                 </div>
             </div>
@@ -148,7 +148,7 @@
             signInWithEmailAndPassword(auth, email, password)
                 .then((userCredential) => {
                     alert("Successfully logged in");
-                    window.location.href = 'index.html';
+                    window.location.href = 'home.html';
                     const user = userCredential.user;
                     console.log(user);
 
