@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKu6c/AIjGtu+kg6+Xn/+q0K99aTCFIF1ftSjrL2OH4s1P+hda9PVsUv6" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKu6c/AIjGtu+kg6+Xn/+q0K99aTCFIF1ftSjrL2OH4s1P+hda9PVsUv6" crossorigin="anonymous"> -->
 
 </head>
 
 <body>
-    <div class="container-fluid">
     <!-- fixed navbar -->
+    <div class="container-fluid">
     <div class="container-fluid nav justify-content-center myColor">
         <div class="d-flex p-2">
             <h5 class="p-1">FREE SHIPPING on all orders of </h5>
@@ -85,20 +85,48 @@
                     <img class="logo mx-4 me-2 img-fluid" src="./images/adding.png" alt="logo" width="55px">
                     <a class="navbar-brand fw-bold fs-3 d-sm-block mt-2 color" href="#">Library Books</a>
                 </div>
-                <div class="dropdown-center" id="categoryDropdown">
+
+                <div class="dropdown-center">
+                    <button class="myColor dropdown-toggle m-1 p-3 border-info rounded-4 fw-bold fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Category
+                    </button>
+                    <ul class="dropdown-menu myColor">
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#Children">Children</a>
+                        </li>
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#English">English</a>
+                        </li>
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#English">Urdu</a>
+                        </li>
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#English">Science</a>
+                        </li>
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#English">Arabic</a>
+                        </li>
+                        <li class="fs-5 mx-5 fw-bold border-info">
+                            <a class="dropdown-item hover" href="#English">Islmiat</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <!-- <div class="dropdown-center" id="categoryDropdown">
                     <button class="myColor dropdown-toggle m-1 p-3 border-info rounded-4 fw-bold fs-5" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Select Category
                     </button>
-                    <ul class="dropdown-menu myColor"  id="categoryDropdown">
-                        <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#Children">Children</a></li>
+                    <ul class="dropdown-menu myColor"  id="categoryDropdown"> -->
+                        <!-- <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#Children">Children</a></li>
                         <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#English">English</a></li>
                         <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#Urdu">Urdu</a></li>
                         <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#">Islamic</a></li>
                         <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#">Arabic</a></li>
                         <li class="fs-5 mx-5 fw-bold border-info"><a class="dropdown-item hover" href="#">Science</a></li>
                     </ul>
-                </div>
+                </div> -->
                 <!-- Button trigger modal -->
                 <button type="button" class="myColor border-info fs-5 p-3 fw-bold rounded-4" data-bs-toggle="modal"
                     data-bs-target="#exampleModal">
@@ -175,10 +203,48 @@
         </div>
     </div>
     <!-- book row -->
-    <div class="container-fluid m-5">
-        <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3" id="cardList">
-        </div>
+   <!-- English Section -->
+<div class="container-fluid m-5 color" id="English">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListEnglish">
+        <h2>English Books</h2>
     </div>
+</div>
+
+<!-- Urdu Section -->
+<div class="container-fluid m-5 color" id="Urdu">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListUrdu">
+        <h2>Urdu Books</h2>
+    </div>
+</div>
+
+<!-- Science Section -->
+<div class="container-fluid m-5 color" id="Science">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListScience">
+        <h2>Science Books</h2>
+    </div>
+</div>
+
+<!-- Children Section -->
+<div class="container-fluid m-5 color" id="Children">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListChildren">
+        <h2>Children's Books</h2>
+    </div>
+</div>
+
+<!-- Islamic Section -->
+<div class="container-fluid m-5 color" id="Islamic">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListIslamic">
+        <h2>Islamic Books</h2>
+    </div>
+</div>
+ <!-- Arabic Section -->
+<div class="container-fluid m-5 color" id="Arabic">
+    <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListArabic">
+        <h2>Arabic Books</h2>
+    </div>
+</div>
+
+
     
     <!-- Services cards -->
     <div class="container-fluid mt-4">
@@ -279,7 +345,8 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>;
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="app.js" type="module"></script>
+    <script src="newfile.js" type="module"></script>
+    <!-- <script src="app.js" type="module"></script> -->
 </body>
 
 </html>
