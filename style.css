@@ -1,3 +1,11 @@
+body{
+     background-image: url("images/bg3.jpg");
+     background-repeat: no-repeat;
+    background-color: #c0bbbb; 
+    background-position: 100%;
+    background-size: cover;
+}
+
 .icon-color{
     color: #ffff !important;
     border-radius: 50%;
@@ -8,14 +16,26 @@
 }
 .color{
   color: #15aef5 !important;
+  font-family: cursive;
 }
 .myColor{
     background-color: #20aef0;
-    color: #ffff
+    color: #ffff;
+    font-family: cursive;
 }
 .hover:hover{
-    color: #20aef0 !important;
+    color: #ef7ae0 !important;
  }
+.card:hover{
+color: rgb(216, 81, 164);
+border: none;
+box-shadow: indianred 1px 1px 3px;
+margin: 5px;
+padding: 5px;
+transform: scale(1.1);
+transition: 1s;
+border-radius: 8px;
+}
  .blend {
      background-image: url("images/1705231957939.gif");
     background-repeat: no-repeat;
@@ -26,6 +46,10 @@
     background-position: 100%;
     background-size: cover; 
   }
+.family{
+  font-family: cursive;
+}
+
   #Login{
     margin:  0%, 0%, 8%, 8%;
 }
@@ -43,3 +67,26 @@
     #auth:hover{
     color: rgb(232, 110, 243) !important;
 }
+
+/* Base styles for SweetAlert */
+.swal2-popup {
+  font-size: 16px;
+  width: 400px; /* Default width */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .swal2-popup {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+  .swal2-popup {
+      font-size: 18px; /* Increase font size for larger screens */
+  }
+}
+ #large:hover{
+border: 1px solid info !important;
+ }

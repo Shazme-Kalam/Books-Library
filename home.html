@@ -29,10 +29,10 @@
             <div class="container-fluid">
                 <div class="d-flex">
                     <i class="fa fa-phone fa-lg mx-2 hover d-flex">
-                        <p class="navbar-brand p-1"><small><em class="hover">123456789</em></small></p>
+                        <p class="navbar-brand fw-bold p-1"><small><em class="hover">123456789</em></small></p>
                     </i>
                     <i class="fa fa-envelope fa-lg hover d-flex">
-                        <p class="mx-2 p-1"><small><em class="hover">query@bookslibrary.com</em></small></p>
+                        <p class="mx-2 fw-bold p-1"><small><em class="hover">query@bookslibrary.com</em></small></p>
                     </i>
                 </div>
 
@@ -55,14 +55,22 @@
         <!-- Main navbar -->
         <div class="navbar myColor text-white navbar-expand-lg">
             <div class="container-fluid">
-                <div class="d-flex m-2 mx-2">
-                    <img class="" src="images/books.png" alt="bookslibrary" width="100px" height="65px">
-                    <h3 class="m-3 mx-2"><strong>Library Books</strong></h3>
+                <div class="d-flex m-2">
+                    <img class="" src="images/books.png" alt="bookslibrary" width="120px" height="85px">
+                    <h3 class="m-3 mx-2"><strong class="fs-1 hover">Library Books</strong></h3>
                 </div>
-                <div role="search">
-                    <input class="form-control mx-3 px-5 p-1 rounded-4" type="search"
-                        placeholder="Search By Title,Author,Publisher..." aria-label="Search">
-                </div>
+                <ul class="navbar-nav me-auto mb-2 mx-4 mb-lg-0">
+                    <li class="nav-item mx-5">
+                        <a class="nav-link active text-white hover fw-bold fs-5" aria-current="page"
+                            href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white hover fw-bold fs-5" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-5">
+                        <a class="nav-link text-white hover fw-bold fs-5" href="#books">BOOKS</a>
+                    </li>
+                </ul>
                 <div class="d-flex m-2">
                     <img class="mx-5" src="images/CartLogo.png" alt="bookslibrary" width="40px" height="28px">
                     <a href="./index.html">
@@ -131,7 +139,8 @@
                                 <div class="modal-body">
                                     <div class="mb-3">
                                         <label for="title" class="text hover fw-bold">Title</label>
-                                        <input type="text" class="form-control" id="title" required aria-describedby="emailHelp">
+                                        <input type="text" class="form-control" id="title" required
+                                            aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
                                         <label for="author" class="text hover fw-bold">Author</label>
@@ -145,11 +154,13 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="image" class="text hover fw-bold">Image Address</label>
-                                        <input type="text" class="form-control" id="image" required aria-describedby="emailHelp">
+                                        <input type="text" class="form-control" id="image" required
+                                            aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
                                         <label for="read" class="text hover fw-bold">Book URL</label>
-                                        <input type="text" class="form-control" id="url" required aria-describedby="emailHelp">
+                                        <input type="text" class="form-control" id="url" required
+                                            aria-describedby="emailHelp">
                                     </div>
                                     <div class="mb-3">
                                         <label for="price" class="text hover fw-bold">Price</label>
@@ -190,71 +201,81 @@
             </div>
         </div>
         <!-- book row -->
-        <!-- English Section -->
-        <div class="container-fluid m-5 color" id="English">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListEnglish">
-                <!-- <h2>English Books</h2> -->
+        <div id="books">
+            <!-- English Section -->
+            <div class="container-fluid m-5 color" id="English">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListEnglish">
+                    <!-- <h2>English Books</h2> -->
+                </div>
+            </div>
+
+            <!-- Urdu Section -->
+            <div class="container-fluid m-5 color" id="Urdu">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListUrdu">
+                    <!-- <h2>Urdu Books</h2> -->
+                </div>
+            </div>
+
+            <!-- Science Section -->
+            <div class="container-fluid m-5 color" id="Science">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListScience">
+                    <!-- <h2>Science Books</h2> -->
+                </div>
+            </div>
+
+            <!-- Children Section -->
+            <div class="container-fluid m-5 color" id="Children">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListChildren">
+                    <!-- <h2>Children's Books</h2> -->
+                </div>
+            </div>
+
+            <!-- Islamic Section -->
+            <div class="container-fluid m-5 color" id="Islamic">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListIslamic">
+                    <!-- <h2>Islamic Books</h2> -->
+                </div>
+            </div>
+            <!-- Arabic Section -->
+            <div class="container-fluid m-5 color" id="Arabic">
+                <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListArabic">
+                    <!-- <h2>Arabic Books</h2> -->
+                </div>
             </div>
         </div>
 
-        <!-- Urdu Section -->
-        <div class="container-fluid m-5 color" id="Urdu">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListUrdu">
-                <!-- <h2>Urdu Books</h2> -->
+        <div class="container">
+            <h1 class="color fw-bold justify-content-center">About Us</h1>
+            <div class="about-section fs-4 fw-small ">
+                <p class="family hover">Welcome to the Books Library, your go-to destination for all things books and reading! We are passionate about literature and dedicated to providing a rich and diverse collection of books for readers of all ages and interests.</p>
+                <p class="family hover">At Books Library, we believe in the power of books to educate, inspire, and entertain. Our mission is to foster a love for reading and lifelong learning by offering access to a wide range of books in various genres, including fiction, non-fiction, classics, and more.</p>
+                <p class="family hover">Our team of librarians and book enthusiasts curates our collection with care, ensuring that our library is filled with quality reads that will captivate and enrich our readers' lives. Whether you're looking for the latest bestsellers, timeless classics, or hidden gems, you'll find something special at the Books Library.</p>
+                <p class="family hover">Thank you for choosing Books Library as your literary companion. We invite you to explore our shelves, discover new worlds between the pages, and embark on countless adventures through the magic of books.</p>
             </div>
         </div>
-
-        <!-- Science Section -->
-        <div class="container-fluid m-5 color" id="Science">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListScience">
-                <!-- <h2>Science Books</h2> -->
-            </div>
-        </div>
-
-        <!-- Children Section -->
-        <div class="container-fluid m-5 color" id="Children">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListChildren">
-                <!-- <h2>Children's Books</h2> -->
-            </div>
-        </div>
-
-        <!-- Islamic Section -->
-        <div class="container-fluid m-5 color" id="Islamic">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListIslamic">
-                <!-- <h2>Islamic Books</h2> -->
-            </div>
-        </div>
-        <!-- Arabic Section -->
-        <div class="container-fluid m-5 color" id="Arabic">
-            <div class="mt-3 row row-cols-1 row-cols-md-2 row-cols-lg-3 category-container" id="cardListArabic">
-                <!-- <h2>Arabic Books</h2> -->
-            </div>
-        </div>
-
-
 
         <!-- Services cards -->
-        <div class="container-fluid mt-4">
+        <div class="container-fluid mx-5 mt-4">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
                 <div class="col mx-5 px-4 mb-4">
                     <i class="mx-2 p-2 fa fa-truck fa-2x icon-color myColor" aria-hidden="true"></i>
-                    <div class="card-body">
-                        <h6 class="card-title">FAST DELIVERY</h6>
-                        <p class="card-text">24/7 Amazing Services</p>
+                    <div class="card-body hover">
+                        <h6 class="card-title fs-4">FAST DELIVERY</h6>
+                        <p class="card-text fw-bold">24/7 Amazing Services</p>
                     </div>
                 </div>
                 <div class="col mx-5 mb-4">
                     <i class="mx-2 p-2 fa fa-book fa-2x icon-color myColor" aria-hidden="true"></i>
-                    <div class="card-body">
-                        <h6 class="card-title">ORIGINAL BOOKS</h6>
-                        <p class="card-text">100% Original Books</p>
+                    <div class="card-body hover">
+                        <h6 class="card-title fs-4">ORIGINAL BOOKS</h6>
+                        <p class="card-text fw-bold">100% Original Books</p>
                     </div>
                 </div>
                 <div class="col mx-5 px-4 mb-4">
                     <i class="mx-2 p-2 fa fa-gift fa-2x icon-color myColor" aria-hidden="true"></i>
-                    <div class="card-body">
-                        <h6 class="card-title">BEST OFFERS</h6>
-                        <p class="card-text">Best Prices & Offers</p>
+                    <div class="card-body hover">
+                        <h6 class="card-title fs-4">BEST OFFERS</h6>
+                        <p class="card-text fw-bold">Best Prices & Offers</p>
                     </div>
                 </div>
             </div>
@@ -262,12 +283,12 @@
 
 
         <!-- Details And Contact -->
-        <div class="container-fluid mt-2 bg-dark">
+        <div class="container-fluid mt-2 bg-dark-subtle">
             <div class="row m-2">
                 <div class="col-sm-3">
                     <div class="m-3 mx-5 p-2 border border-0">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="mx-2 mt-3 card-title text-info">Information</h5>
+                        <div class="card-body bg-dark-subtle text-dark fs-5 fw-bold family">
+                            <h5 class="mx-2 mt-3 card-title text-info fw-bold family">Information</h5>
                             <li class="bullets mt-4 hover"><a class="dropdown-item active" href="#">About Us</a></li>
                             <li class="bullets hover"><a class="dropdown-item active" href="#">How to avail bank
                                     discounts</a></li>
@@ -283,8 +304,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="m-3 mx-4 p-2 border border-0">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title mx-2 mt-3 text-info">New Features</h5>
+                        <div class="card-body bg-dark-subtle text-dark fs-5 fw-bold family">
+                            <h5 class="card-title mx-2 mt-3 text-info fw-bold family ">New Features</h5>
                             <li class="bullets hover mt-4"><a class="dropdown-item" href="#">Send E-Gift Card</a></li>
                             <li class="bullets hover"><a class="dropdown-item" href="#">Track Your Order</a></li>
                             <li class="bullets hover"><a class="dropdown-item" href="#">Track Requested Book</a></li>
@@ -294,8 +315,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="m-3 mx-4 p-2 border border-0">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title text-info mx-2 mt-3">Customer Support </h5>
+                        <div class="card-body bg-dark-subtle text-dark fs-5 fw-bold family">
+                            <h5 class="card-title text-info mx-2 mt-3 fw-bold family">Customer Support </h5>
                             <li class="bullets hover mt-4"><a class="dropdown-item" href="#">Returns</a></li>
                             <li class="bullets hover"><a class="dropdown-item" href="#">Contact us</a></li>
                             <li class="bullets hover"><a class="dropdown-item" href="#">Site Map</a></li>
@@ -305,25 +326,26 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="m-3 mx-4 p-2 border border-0">
-                        <div class="card-body bg-dark text-white">
-                            <h5 class="card-title text-info mx-2 mt-3">Contact Us</h5>
+                        <div class="card-body bg-dark-subtle text-dark fs-5 fw-bold family">
+                            <h5 class="card-title text-info mx-2 mt-3 fw-bold family" id="contact">Contact Us</h5>
                             <p class="bullets mt-4" class="dropdown-item" href="#">For Complaints & Feedback:</p>
-                            <a class="dropdown-item " href="#"><em class="hover">query@bookslibrary.com</em></a>
+                            <a class="dropdown-item " href="#"><em class="hover color">query@bookslibrary.com</em></a>
 
                             <!-- Social Media Icons -->
                             <div class="social-icons">
                                 <a href="https://www.facebook.com/" target="_blank" class="text-white"><i
-                                        class="fa fa-facebook-f fa-lg mx-1 hover"></i></a>
+                                        class="fa fa-facebook-f fa-lg mx-2 color hover"></i></a>
                                 <a href="https://twitter.com/" target="_blank" class="text-white"><i
-                                        class="fa fa-twitter fa-lg mx-1 hover"></i></a>
+                                        class="fa fa-twitter fa-lg mx-2 color hover"></i></a>
                                 <a href="https://www.instagram.com/" target="_blank" class="text-white"><i
-                                        class="fa fa-instagram fa-lg mx-1 hover"></i></a>
+                                        class="fa fa-instagram fa-lg mx-2 color hover"></i></a>
                                 <a href="https://www.youtube.com/" target="_blank" class="text-white"><i
-                                        class="fa fa-youtube fa-lg mx-1 hover"></i></a>
+                                        class="fa fa-youtube fa-lg mx-2 color hover"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="color hover mx-5 fs-4 fw-bold m-2" id="top">Go to Top</div>
             </div>
         </div>
 
@@ -331,7 +353,7 @@
         <footer class="container-fluid nav justify-content-center myColor">
             <div class="d-flex p-2">
                 <div class="justify-content-center container-fluid">
-                    <a class="navbar-brand fw-bold fs-6 text-white" href="#">Copyright &copy; 2024, Library Books, All
+                    <a class="navbar-brand fw-bold fs-6 text-white hover" href="#">Copyright &copy; 2024, Library Books, All
                         Rights Reserved.</a>
                 </div>
             </div>

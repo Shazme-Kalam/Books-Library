@@ -60,11 +60,11 @@ function addBook(category) {
             const val = data1[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2  mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info ';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${val.image}" class="img-fluid rounded-start" alt="${val.title}">
             </div>
             <div class="col-md-6 m-2">
@@ -95,11 +95,11 @@ function addBook(category) {
             const val2 = data2[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2  mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${val2.image}" class="img-fluid rounded-start" alt="${val2.title}">
             </div>
             <div class="col-md-6 m-2">
@@ -129,11 +129,11 @@ function addBook(category) {
             const vlu = data3[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2  mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${vlu.image}" class="img-fluid rounded-start" alt="${vlu.title}">
             </div>
             <div class="col-md-6 m-2">
@@ -165,11 +165,11 @@ function addBook(category) {
             const vale = data4[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2  mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${vale.image}" class="img-fluid rounded-start" alt="${vale.title}">
             </div>
             <div class="col-md-6 m-2">
@@ -201,11 +201,11 @@ function addBook(category) {
             const valu = data5[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2 mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${valu.image}" class="img-fluid rounded-start" alt="${valu.title}">
             </div>
             <div class="col-md-6 m-2">
@@ -237,11 +237,11 @@ function addBook(category) {
             const valU = data6[index]
             // HTML elements create karke book ko display karo
             const cardDiv = document.createElement('div');
-            cardDiv.className = 'card m-2 mx-5 border-info';
+            cardDiv.className = 'card m-2 bg-info-subtle mx-5 border-info';
             cardDiv.style.maxWidth = '340px';
             cardDiv.innerHTML = `
             <div class="row g-0">
-            <div class="col-md-4 m-3 mt-4">
+            <div class="col-md-3 m-3 mt-4">
             <img src="${valU.image}" class="img-fluid rounded-start" width="180px" height="350px" alt="${valU.title}">
             </div>
             <div class="col-md-6 m-2">
