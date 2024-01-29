@@ -13,7 +13,7 @@ body {
 }
 
 .content {
-    background-image: linear-gradient(to right, rgb(238, 187, 205) ,grey, rgb(134, 230, 229));#79919b; 
+    background-image: linear-gradient(to right, rgb(238, 187, 205) ,grey, rgb(134, 230, 229)); 
     padding: 05px;
     border-radius: 10px;
 }
