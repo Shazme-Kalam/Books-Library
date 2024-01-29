@@ -11,33 +11,34 @@
 </head>
 
 <body>
-    <!-- fixed navbar -->
+  <!-- fixed navbar -->
+  <div class="container-fluid">
     <div class="container-fluid nav justify-content-center myColor">
-        <div class="d-flex p-2">
+        <div class="d-flex p-1">
             <h5 class="p-1">FREE SHIPPING on all orders of </h5>
             <h4><strong class="d-flex text-warning"> PKR 5000 and above</strong></h4>
-            <a class="nav-link active p-2" href="#">
-                <strong class="bg-warning text-success p-2 rounded-3 ">Use Promo Code:SMIT</strong>
+            <a class="nav-link active p-1" href="">
+                <strong class="text-light p-1 mx-1 rounded-3 ">Use Promo Code:SMIT</strong>
             </a>
         </div>
     </div>
-    <!-- Link navigation -->
-    <nav class="navbar bg-body-light">
+    <!-- link navbar -->
+    <nav class="navbar bg-body-light navbar-expand-lg">
         <div class="container-fluid">
             <div class="d-flex">
-                <i class="fa fa-phone fa-lg mx-4 hover d-flex">
-                    <p class="mx-2"><small><em class="hover">123456789</em></small></p>
+                <i class="fa fa-phone fa-lg mx-2 hover d-flex">
+                    <p class="navbar-brand fw-bold p-1"><small><em class="hover">123456789</em></small></p>
                 </i>
-                <i class="fa fa-envelope fa-lg mx-2 hover d-flex">
-                    <p class="mx-2"><small><em class="hover">query@bookslibrary.com</em></small></p>
+                <i class="fa fa-envelope fa-lg hover d-flex">
+                    <p class="fw-bold p-1"><small><em class="hover">query@bookslibrary.com</em></small></p>
                 </i>
             </div>
 
             <div class="d-flex nav-item dropdown">
-                <a class="navbar-brand mx-0 mt-1" href="#">
+                <a class="navbar-brand mx-0 mt-0" href="#top" id="botm">
                     <img src="images/flag(1).jpeg" alt="flag" width="40">
                 </a>
-                <a class="nav-link dropdown-toggle bg-body-tertiary rounded-5 p-2 m-2" href="#" role="button"
+                <a class="nav-link dropdown-toggle bg-body-tertiary rounded-5 p-2 m-1" href="#"  role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Select Language
                 </a>
@@ -57,14 +58,14 @@
                 <h3 class="m-3 mx-2"><strong class="fs-1 hover">Library Books</strong></h3>
             </div>
 
-            <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation text-white border-white">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse p-4" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+            <button class="navbar-toggler border-white m-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation text-white border-white">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-4" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
                         <a class="nav-link active text-white fw-bold hover mx-5 fs-4" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
@@ -81,54 +82,48 @@
         </div>
     </nav>
     <!-- registration form -->
-    <div>
+    <div class="container">
         <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card m-5 border-5 border-info">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card m-3 m-md-5 border-5 border-info">
                     <div class="card-body bg-info-subtle">
-                        <h2 class="m-5 myColor p-3 rounded-3">REGISTER FIRST</h2>
-                        <br />
+                        <h2 class="m-3 myColor p-3 rounded-3">REGISTER FIRST</h2>
                         <form>
                             <div class="container">
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label fw-bold">User name</label>
-                                    <input type="name" class="form-control" required id="username"
-                                        placeholder="your sweet name">
+                                    <label for="username" class="form-label fw-bold">User name</label>
+                                    <input type="text" class="form-control" required id="username" placeholder="Your sweet name">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label fw-bold ">Email
-                                        address</label>
-                                    <input type="email" class="form-control" id="email" required
-                                        placeholder="name@example.com">
+                                    <label for="email" class="form-label fw-bold">Email address</label>
+                                    <input type="email" class="form-control" id="email" required placeholder="name@example.com">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label fw-bold">Password</label>
-                                    <input type="password" class="form-control" id="password" required
-                                        placeholder="use strong password">
+                                    <label for="password" class="form-label fw-bold">Password</label>
+                                    <input type="password" class="form-control" id="password" required placeholder="Use a strong password">
                                 </div>
-                                <button class="myColor border-warning rounded-3 fw-bold p-2 mx-4" type="submit"
-                                    id="regbtn">REGISTER</button>
-                                <a class="navbar-brand" href="./login.html">
-                                    <button class="myColor border-warning rounded-3 fw-bold p-2" type="submit">LOG
-                                        IN</button>
-                                </a>
+                                <div class="d-grid gap-2">
+                                    <button class="myColor border-warning rounded-3 fw-bold p-2" type="submit" id="regbtn">REGISTER</button>
+                                    <button class="myColor border-warning rounded-3 fw-bold p-2" onclick="alert('First register to your self')">LOG IN</button>
+                                </div>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card-body mt-5 border-info m-5 rounded-2">
-                    <img src="images/book1.webp" alt="" class="mx-3 mb-5" width="150px" height="220px">
-                    <img src="images/book2.jpeg" alt="" class="mx-3 mb-5" width="150px" height="220px">
-                    <img src="images/book3.jpeg" alt="" class="mx-3 mb-5" width="150px" height="220px">
-                    <img src="images/book4.jpeg" alt="" class="mx-3 mb-5" width="150px" height="220px">
-                    <img src="images/book5.jpeg" alt="" class="mx-3 mb-5" width="150px" height="220px">
-                    <img src="images/book6.jpg" alt="" class="mx-3 mb-5" width="150px" height="220px">
+            <div class="col-md-6 mt-5">
+                <div class="card-body border-info mt-2 rounded-2 d-flex flex-wrap justify-content-center">
+                    <img src="images/book1.webp" alt="" class="mx-2 mb-3" width="150px" height="220px">
+                    <img src="images/book2.jpeg" alt="" class="mx-2 mb-3" width="150px" height="220px">
+                    <img src="images/book3.jpeg" alt="" class="mx-2 mb-3" width="150px" height="220px">
+                    <img src="images/book4.jpeg" alt="" class="mx-2 mb-3" width="150px" height="220px">
+                    <img src="images/book5.jpeg" alt="" class="mx-2 mb-3" width="150px" height="220px">
+                    <img src="images/book6.jpg" alt="" class="mx-2 mb-3" width="150px" height="220px">
                 </div>
             </div>
         </div>
     </div>
+    
     <!-- function -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
@@ -189,10 +184,10 @@
     });
         };
         addEventListener('submit', register);
-    </script>;
-    <script src="newfile.js"></script>;
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>;
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>;
+    </script>
+    <script src="newfile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

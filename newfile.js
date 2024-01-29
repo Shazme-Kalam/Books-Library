@@ -10,6 +10,28 @@ const app = initializeApp(appSettings);
 const db = getDatabase(app);
 // Firebase Realtime Database ke liye reference
 const booksRef = ref(db, 'books');
+
+    document.getElementById('addBtn').addEventListener('click', function() {
+        var title = document.getElementById('title').value.trim();
+        var author = document.getElementById('author').value.trim();
+        var category = document.getElementById('category').value.trim();
+        var image = document.getElementById('image').value.trim();
+        var url = document.getElementById('url').value.trim();
+        var price = document.getElementById('price').value.trim();
+
+        if (title === '' || author === '' || category === '' || image === '' || url === '' || price === '') {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please fill in all fields!'
+            });
+            return;
+        }
+        
+
+    });
+
+
 // 'Add Book' button ka event listener
 document.getElementById("addBtn").addEventListener("click", function () {
     const selectedCategory = document.getElementById("category").value;
@@ -35,18 +57,30 @@ function addBook(category) {
         url: url
         // Other book details
     }).then(() => {
+        Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Book added successfully!'
+        });
         console.log("Book added successfully!");
+        clearFormFields();
     }).catch((error) => {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: 'Failed to add book. Please try again later.'
+        });
         console.error("Error adding book:", error);
     });
     // Clear the form fields
+    function clearFormFields() {
     document.getElementById("title").value = "";
     document.getElementById("author").value = "";
     document.getElementById("category").value = "";
     document.getElementById("image").value = "";
     document.getElementById("url").value = "";
     document.getElementById("price").value = "";
-}
+}}
 
 const cardListArabic = document.getElementById("cardListArabic");
 onValue(booksRef, (snapshot) => {
